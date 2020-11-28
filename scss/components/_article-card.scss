@@ -1,0 +1,33 @@
+.article__card {
+  background-color: $white;
+  border-radius: 5px;
+  .article__top {
+    height: 200px;
+    width: 255px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .article__bottom {
+    padding: 24px;
+    .article__author {
+      color: $grey;
+      font-size: 10px;
+    }
+    .article__header {
+      color: $blue;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: $normal;
+      margin-bottom: 8px;
+    }
+    .article__info {
+      color: $grey;
+      font-size: 13px;
+      line-height: 18px;
+      font-weight: $normal;;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.about {
+  padding: 96px 0 94px;
+  z-index: -2;
+  .about__inner {
+    h2 {
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      width: 635px;
+      margin-bottom: 72px;
+    }
+    .about__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 0 30px;
+      .about__feature {
+        padding: 0;
+        .about__image {
+          height: 72px;
+          width: 72px;
+          margin-bottom: 40px;
+        }
+        h3 {
+          font-size: 24px;
+          font-weight: $normal;
+          line-height: 28px;
+          margin-bottom: 26px;
+        }
+      }
+    }
+  }
+}

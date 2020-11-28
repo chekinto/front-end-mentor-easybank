@@ -1,0 +1,37 @@
+.hero {
+  position: relative;
+  z-index: 2;
+  .hero__image {
+    img {
+      position: absolute;
+      left: 1000px;
+      z-index: -1;
+      top: -250px;
+
+    }
+  }
+  .hero__mockup {
+    img {
+      position: absolute;
+      right: 0;
+      transform: translateY(-122px);
+      z-index: -1;
+    }
+  }
+  .hero__text {
+    width: 450px;
+    h1 {
+      color: $blue;
+      font-size: 56px;
+      line-height: 64px;
+      margin-bottom: 24px;
+      padding-top: 140px;
+    }
+    p {
+      margin-bottom: 36px;
+    }
+    button {
+      margin-bottom: 170px;
+    }
+  }
+}

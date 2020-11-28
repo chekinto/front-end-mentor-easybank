@@ -1,0 +1,22 @@
+.mobile__nav {
+  display: none;
+  background-color: $white;
+  border-radius: 4px;
+  padding: 32px;
+  margin: auto;
+  width: 90%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    li {
+      margin-bottom: 24px;
+      text-align: center;
+      a {
+        color: $blue;
+        font-size: 18px;
+        font-weight: $normal;
+      }
+    }
+  }
+}
