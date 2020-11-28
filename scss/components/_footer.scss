@@ -17,6 +17,9 @@ footer {
           height: 20px;
           width: 20px;
           margin-right: 13px;
+          &:last-of-type {
+            margin-right: 0;
+          }
           cursor: pointer;
           transition: color 0.3s ease-in;;
           &:hover {
@@ -36,7 +39,7 @@ footer {
         a {
           color: $white;
           font-size: 15px;
-          font-weight: $normal;
+          font-weight: $light;
           line-height: 26px;
           transition: color 0.3s ease-in;;
           &:hover {
@@ -56,8 +59,44 @@ footer {
       p {
         color: $grey;
         font-size: 15px;
-        font-weight: $normal;
+        font-weight: $light;
         line-height: 26px;
+      }
+    }
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      justify-content: center;
+      .footer__social {
+        margin-right: 0;
+        div {
+          display: flex;
+          justify-content: center;
+        }
+        .footer__logo {
+          margin-bottom: 32px;
+          width: 140px;
+          height: 20px;
+        }
+        .footer__icons {
+          margin-bottom: 32px;
+          .footer__icon {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+      .footer__navigation {
+        ul {
+          margin-right: 0;
+          li {
+            text-align: center;
+          }
+        }
+      }
+      .footer__copyright {
+        margin: 32px 0 0;
+        justify-content: center;
+        align-items: center;
       }
     }
   }

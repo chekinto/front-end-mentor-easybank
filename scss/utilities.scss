@@ -2,6 +2,10 @@
   max-width: $max-width;
   margin: 0 auto;
   padding: 0 32px;
+  @media screen and (max-width: $tablet){
+    padding: 0 24px;
+    
+  }
 }
 
 .section {
@@ -13,6 +17,11 @@
 .title {
   color: $blue;
   font-size: 40px;
-  font-weight: $normal;
+  font-weight: $light;
   line-height: 64px;
+  @media screen and (max-width: $tablet){
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+  }
 }

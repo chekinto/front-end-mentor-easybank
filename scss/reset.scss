@@ -25,4 +25,9 @@ p {
   color: $grey;
   font-size: 18px;
   line-height: 28px;
+  font-weight: $light;
+  @media screen and (max-width: $tablet){
+    font-size: 15px;
+    line-height: 25px;
+  }
 }

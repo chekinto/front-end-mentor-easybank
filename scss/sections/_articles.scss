@@ -6,8 +6,8 @@
     }
     .articles__grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 30px;
     }
   }
 }
