@@ -76,7 +76,13 @@
     height: 402px;
     width: 100%;
     @media (min-width: 765px) {
-      display: none;
+      background-image: url(../../images/image-mockups.png);
+      // background-size: cover; 
+      left: 1290px;
+      position: absolute;
+      width: 700px;
+      height: 1000px;
+      top: -160px;
     }
   }
 }
