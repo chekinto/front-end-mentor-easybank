@@ -5,29 +5,33 @@ const overlay = document.getElementById('overlay');
 const mobileNav = document.getElementById('mobileNav');
 let isOpen = false;
 
+const addClasses = () => {
+  line.classList.add('active')
+  overlay.classList.add('is-modalOpen')
+  mobileNav.classList.add('is-mobileOpen')
+  document.body.style.overflow = 'hidden'
+  isOpen = true
+}
+
+const removeClasses = () => {
+  line.classList.remove('active')
+  overlay.classList.remove('is-modalOpen')
+  mobileNav.classList.remove('is-mobileOpen')
+  document.body.style.overflow = 'initial'
+  isOpen = false
+}
+
 const toggleMobileNav = (e) => {
   if (!isOpen) {
-    line.classList.add('active')
-    overlay.classList.add('is-modalOpen')
-    mobileNav.classList.add('is-mobileOpen')
-    document.body.style.overflow = 'hidden'
-    isOpen = true
+    addClasses()
   } else {
-    line.classList.remove('active')
-    overlay.classList.remove('is-modalOpen')
-    mobileNav.classList.remove('is-mobileOpen')
-    document.body.style.overflow = 'initial'
-    isOpen = false
+    removeClasses()
   }
 }
 
 const handleToggleResize = () => {
   if (window.innerWidth < 800 && isOpen) {
-    line.classList.remove('active')
-    overlay.classList.remove('is-modalOpen')
-    mobileNav.classList.remove('is-mobileOpen')
-    document.body.style.overflow = 'initial'
-    isOpen = false
+    removeClasses()
   }
 }
 
