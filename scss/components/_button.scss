@@ -2,16 +2,16 @@
   border: 0;
   border-radius: 22px;
   color: $white;
-  font-family: 'Montserrat';
+  font-family: 'Public Sans';
   font-size: 14px;
   font-weight: $bold;
   height: 44px;
-  width: 163px;
+  width: auto;
   letter-spacing: 0;
   line-height: 28px;
   padding: 8px 28px;
-  cursor: pointer;
   transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 
 .btn__primary {

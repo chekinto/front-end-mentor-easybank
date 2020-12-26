@@ -1,10 +1,17 @@
 .mobile__nav {
-  display: none;
   background-color: $white;
   border-radius: 4px;
   padding: 32px;
   margin: auto;
   width: 90%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  animation: slideIn 1s forwards;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   ul {
     display: flex;
     flex-direction: column;
@@ -12,11 +19,37 @@
     li {
       margin-bottom: 24px;
       text-align: center;
+      &:last-child {
+        margin-bottom: 0;
+      }
       a {
         color: $blue;
         font-size: 18px;
         font-weight: $normal;
+        &:hover {
+        color: $primary;
+      }
       }
     }
+  }
+}
+
+.is-mobileOpen.mobile__nav {
+  animation: slideIn 1s;
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  visibility: visible;
   }
 }

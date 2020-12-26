@@ -2,7 +2,7 @@ header {
   box-shadow: $shadow;
   background-color: $white;
   position: relative;
-  z-index: 10;
+  z-index: 100;
   .header__inner {
     display: flex;
     justify-content: space-between;
